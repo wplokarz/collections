@@ -4,6 +4,14 @@ import java.util.Set;
 
 
 public class SetProblem {
+    public static void main(String[] args) {
+        Set<User> users = new LimitedSet<>();
+        users.add(new User("Max", 27));
+        users.add(new User("Veronika", 20));
+        users.add(new User("Denis", 30));
+        users.add(new User("Max", 27));
+    }
+
     static class User {
         private String name;
         private int age;
@@ -29,15 +37,5 @@ public class SetProblem {
         public void setAge(int age) {
             this.age = age;
         }
-    }
-
-
-    public static void main(String[] args) {
-        Set<User> users = new LimitedSet<>();
-        users.add(new User("Max", 27));
-        users.add(new User("Veronika", 20));
-        users.add(new User("Denis", 30));
-        users.add(new User("Max", 27));
-
     }
 }

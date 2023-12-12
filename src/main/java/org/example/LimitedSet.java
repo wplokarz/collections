@@ -2,6 +2,7 @@ package org.example;
 
 import java.util.HashSet;
 
+// custom set where user can add only three elements, otherwise error is thrown
 public class LimitedSet<E> extends HashSet<E> {
     private final int maxSize = 3;
 
